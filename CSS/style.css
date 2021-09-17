@@ -1,0 +1,118 @@
+/**style to all sheet**/
+*{
+    padding: 0;
+    margin: 0;
+} 
+/*padding bottom to the body because of the fotter */
+body{
+    padding: 5vh 0;
+}
+
+/*Style all a elements*/
+a{
+    padding:10px 10px;
+    color: white;
+    font-size: 105%;
+    text-decoration: none; /**remove underline**/
+}
+/**Start nav bar style**/
+.navBar{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: darkcyan;
+     /** the overflow in the nav section make a scroll bar  **/ 
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#logo{ /*h1 logo*/ 
+    font-family: 'Pacifico', cursive;
+    font-size: 150%;
+    margin: 0 10px 10px 0 ;
+    font-weight: normal;
+    color: white;
+}
+.navBar ul li {
+    display: inline; /*to make no new line*/
+}
+.navBar a:hover{
+    background-color: teal;
+    font-weight: bold;
+}
+#activeNav{ /*class section to the active nav item*/
+    font-weight: bold;
+    border-bottom: 5px solid white;
+}
+
+/*section Style start*/
+.activeSection{ /*class section to the active nav section*/
+    background-color: rgb(197, 193, 193);
+    }
+
+.section{
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px 10px 15px 10px ;
+    border-radius: 5px;
+    border:2px solid teal;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.section p{
+    margin:  10px 0px;
+    font-size: 15;
+}
+.section h2{
+    font-size: 30px;
+}
+.pushable { /*read me button style*/
+    background: teal;
+    border-radius: 12px;
+    border: none;
+  }
+  .front {
+    display: block;
+    padding: 8px 25px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: rgb(2, 155, 155);
+    color: white;
+  }
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  .section article{
+      text-align: center;
+  }
+/*section Style end*/
+
+#floatingButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: teal;
+    border: none;
+    color: #FFF;
+    font-size: 36px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+  }
+
+/**footer**/
+#footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position:fixed;
+    bottom: 0; 
+}
+/**fotter**/
